@@ -19,10 +19,10 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  let sx = 0 //let you adjust the shape of the mouth
-  let sy = 180 //let you adjust the shape of the mouth
-  let hx = 100 
-  let hy = 100 
+  let sx = 180 //let you adjust the shape of the mouth
+  let sy = 0 //let you adjust the shape of the mouth
+  let hx = 50
+  let hy = 200
   face(sx,sy,hx,hy)
 
   
