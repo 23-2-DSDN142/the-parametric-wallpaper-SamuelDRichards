@@ -1,24 +1,26 @@
 //your parameter variables go here!
-let howmanyfish = 2 //adds more or less fish based on the number you put in, goes 1-5
-let howmanyevilfish = 3 //adds more or less evil fish based on the number you put in, goes 1-5
-let x = 80 //adjust the postion of the fish on the x - axis
+let howmanyfish = 4 //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 0 //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10 //adjust the postion of the fish on the x - axis
 let y = 10 //adjust the postion of the fish on the y - axis
 let face_be_happy = 1 //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
 let fin = 1 //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 5 //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = 1.4 //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GLIDE_WALLPAPER);
 
-  pWallpaper.resolution( FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.resolution( NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
   angleMode(DEGREES)
 
   //Grid settings
   pWallpaper.grid_settings.cell_width = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset = 50;
+  pWallpaper.grid_settings.row_offset = 0;
 }
 
 function wallpaper_background() {
@@ -27,7 +29,7 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   HellaEvilFish(howmanyevilfish, x, y, fin)
-  hellafish(howmanyfish, x, y, face_be_happy, fin)
+  hellafish(howmanyfish, u, s, x, y, face_be_happy, fin)
 
 
 }
@@ -38,31 +40,39 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
 
-function hellafish(howmanyfish){
+function hellafish(howmanyfish,u,s){
   if(howmanyfish === 1){
        fishnotevil(x, y, face_be_happy, fin)
       }
       if(howmanyfish === 2){
-        fishnotevil(x, y, face_be_happy, fin)
-        fishnotevil((x+10), y+37, face_be_happy, fin)
+        fishnotevil((x)*u, (y)*s, face_be_happy, fin)
+        fishnotevil((x+10)*u, (y+37)*s, face_be_happy, fin)
        }
        if(howmanyfish === 3){
-        fishnotevil(x, y, face_be_happy, fin)
-        fishnotevil((x+10), y+37, face_be_happy, fin)
-        fishnotevil((x+20), y+72, face_be_happy, fin)
+        fishnotevil((x)*u, (y)*s, face_be_happy, fin)
+        fishnotevil((x+10*u), (y+37)*s, face_be_happy, fin)
+        fishnotevil((x+20)*u, (y+72)*s, face_be_happy, fin)
        }
        if(howmanyfish === 4){
-        fishnotevil(x, y, face_be_happy, fin)
-        fishnotevil((x+10), y+37, face_be_happy, fin)
-        fishnotevil((x+20), y+72, face_be_happy, fin)
-        fishnotevil((x+30), y+107, face_be_happy, fin)
+        fishnotevil((x)*u, (y)*s,face_be_happy, fin)
+        fishnotevil((x+10)*u, (y+37)*s, face_be_happy, fin)
+        fishnotevil((x+20)*u, (y+72)*s, face_be_happy, fin)
+        fishnotevil((x+30)*u, (y+107)*s, face_be_happy, fin)
        }
        if(howmanyfish === 5){
-        fishnotevil(x, y, face_be_happy, fin)
-        fishnotevil((x+10), y+37, face_be_happy, fin)
-        fishnotevil((x+20), y+72, face_be_happy, fin)
-        fishnotevil((x+30), y+107, face_be_happy, fin)
-        fishnotevil((x+40), y+143, face_be_happy, fin)
+        fishnotevil((x)*u, (y)*s, face_be_happy, fin)
+        fishnotevil((x+10)*u, (y+37)*s, face_be_happy, fin)
+        fishnotevil((x+20)*u, (y+72)*s, face_be_happy, fin)
+        fishnotevil((x+30)*u, (y+107)*s, face_be_happy, fin)
+        fishnotevil((x+40)*u, (y+143)*s, face_be_happy, fin)
+       }
+       if(howmanyfish === 6){
+        fishnotevil((x)*u, (y)*s, face_be_happy, fin)
+        fishnotevil((x+10)*u, (y+37)*s, face_be_happy, fin)
+        fishnotevil((x+20)*u, (y+72)*s, face_be_happy, fin)
+        fishnotevil((x+30)*u, (y+107)*s, face_be_happy, fin)
+        fishnotevil((x+40)*u, (y+143)*s, face_be_happy, fin)
+        fishnotevil((x+50)*u,(y+180)*s, face_be_happy, fin)
        }
 
     }
