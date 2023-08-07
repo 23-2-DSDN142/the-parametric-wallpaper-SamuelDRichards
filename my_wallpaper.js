@@ -13,7 +13,7 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
   //pWallpaper.output_mode(GLIDE_WALLPAPER);
 
-  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
   angleMode(DEGREES);
 
@@ -40,9 +40,9 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 
 
 
-function hellafish(howmanyfish, u, s) {
+function hellafish(howmanyfish, u, s) {  //set how many fish there are
   if (howmanyfish === 1) {
-    fishnotevil(x, y, face_be_happy, fin);
+    fishnotevil((x) * u, (y) * s, face_be_happy, fin);
   }
   if (howmanyfish === 2) {
     fishnotevil((x) * u, (y) * s, face_be_happy, fin);
@@ -83,7 +83,7 @@ function hellafish(howmanyfish, u, s) {
 
 
 
-function HellaEvilFish(howmanyevilfish) {
+function HellaEvilFish(howmanyevilfish) { //set how many fish there are
   if (howmanyevilfish === 1) {
     evilfish((x + 10) * u, (y + 37) * s, fin);
   }

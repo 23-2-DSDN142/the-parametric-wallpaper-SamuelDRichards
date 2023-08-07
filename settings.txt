@@ -1,53 +1,275 @@
 You will need to fill out this file for hand in. 
-The bellow is just an example, feel free to disregard this documents contents.
 
 
-Your final settings.txt will look something like this when you are finished:
+
+
+
+
+/////////////////////////////////
+Wallpaper 1: (normal fish) 
+
+
+//your parameter variables go here!
+let howmanyfish = 4; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 0; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 1; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 1; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 5; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = 1.4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
 
 /////////////////////////////////
 
-Wallpaper 1:
+Wallpaper 2: (evil fish)
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let howmanyfish = 0; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 4; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 1; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 1; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 5; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = 1.4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
 }
+
+///////////////////////////////////
+
+wallpaper 3: (normal fish but sad and no fin)
+
+let howmanyfish = 4; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 0; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 0; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 0; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 5; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = 1.4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
+function wallpaper_background() {
+  background(226, 208, 239);
+}
+
+//////////////////////////////////////////////
+
+wallpaper 4:
+
+//your parameter variables go here!
+let howmanyfish = 2; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 3; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 1; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 1; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 0; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = 1.4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
+////////////////////////////////
+
+wallpaper 5:
+
+let howmanyfish = 1; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 3; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 1; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 1; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 5; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = 1.4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
+/////////////////////////////////////////
+
+wallpaper 6:
+
+//your parameter variables go here!
+let howmanyfish = 4; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 0; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 1; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 1; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 90; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = 1.4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 50;
+}
+
+////////////////////////////////////
+
+wallpaper 7:
+
+
+//your parameter variables go here!
+let howmanyfish = 4; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 0; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 1; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 1; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = -11; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = 1.4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
 
 /////////////////////////////////
 
-Wallpaper 2:
+wallpaper 8:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let howmanyfish = 4; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 0; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 1; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 1; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 5; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = -1.4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 50;
 }
+
+
+/////////////////////////////
+
+wallpaper 9:
+
+//your parameter variables go here!
+let howmanyfish = 1; //adds more or less fish based on the number you put in, goes 1-5
+let howmanyevilfish = 5; //adds more or less evil fish based on the number you put in, goes 1-5
+let x = 10; //adjust the postion of the fish on the x - axis
+let y = 10; //adjust the postion of the fish on the y - axis
+let face_be_happy = 1; //if you make the number 1 or larger it makes the fish happy, anything less than 1 makes the fish sad, ONLY WORKS ON NOT EVIL FISH
+let fin = 1; //this turns the main body fin on or off, 1 or anything more than 1 is on, anything less is off
+let u = 5; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+let s = .4; //adjusts the x axis of the fish even farther via multiplication, ONLY WORKS ON NOT EVIL FISH
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  //pWallpaper.output_mode(GLIDE_WALLPAPER);
+
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  angleMode(DEGREES);
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 50;
+}
+
+///////////////////////////
